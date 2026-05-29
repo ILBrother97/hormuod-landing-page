@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <g transform="translate(200, 300)" filter="url(#shadow)">
+    <rect x="-85" y="-120" width="170" height="240" rx="85" fill="none" stroke="#B45309" stroke-width="14"/>
+    
+    <g>
+      <rect id="scroll-button" x="-14" y="-55" width="28" height="60" rx="14" fill="#B45309">
+        <animate 
+          attributeName="y" 
+          values="-55; 0; -55" 
+          dur="1.5s" 
+          repeatCount="indefinite" 
+          calcMode="spline" 
+          keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"
+        />
+      </rect>
+    </g>
+  </g>
+</svg>

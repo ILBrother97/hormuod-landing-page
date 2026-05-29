@@ -1,0 +1,12 @@
+/* Cormorant SC SemiBold — Heading font */
+@font-face {
+  font-family: 'Cormorant SC';
+  src: url('CormorantSC-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Silka — Body font (same as le-lab.io) */
+@import url("https://db.onlinewebfonts.com/c/314799d808058420a00fdd2500eb1aa3?family=Silka");
+@import url("https://db.onlinewebfonts.com/c/20222942acebb6ad63faf55842260d87?family=Silka+Regular");
