@@ -83,56 +83,75 @@
     </div>
   </section>
   <!-- ============================================
-       SERVICES SECTION (alternating cards — le-lab style)
+       MISSION & VISION
+  ============================================ -->
+  <section class="mv-section">
+    <div class="mv-grid">
+      <div class="mv-card">
+        <span class="mv-label">Mission</span>
+        <h2>Empowering Communities Through Reliable Energy</h2>
+        <p>To deliver exceptional electrical, solar, and generator services that power homes, businesses, and communities across Jigjiga — with safety, integrity, and innovation at every step.</p>
+      </div>
+      <div class="mv-card">
+        <span class="mv-label">Vision</span>
+        <h2>A Brightly Lit Tomorrow</h2>
+        <p>To be the most trusted electrical engineering partner in the Horn of Africa, setting the standard for quality, affordability, and sustainable energy solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES SECTION (timeline)
   ============================================ -->
   <section id="services" class="service-section">
-    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Our Services</h2>
-    <div class="container" style="max-width:1200px;margin:0 auto;padding:0 24px;">
-      <!-- Service 01 -->
-      <div class="service-row">
-        <div class="service-image">
-          <img src="images/services/installation.svg" alt="Electrical Installation services">
+    <h2 class="service-section-title">Our Services</h2>
+    <div class="service-timeline">
+      <div class="tl-item">
+        <div class="tl-marker">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
         </div>
-        <div class="service-text">
-          <div class="service-number">01</div>
-          <h3>Installation</h3>
-          <p>Professional electrical installation for residential, commercial, and industrial projects with full compliance to safety standards. Our certified electricians ensure every job is done right the first time.</p>
-          <button class="service-btn">
-            Learn More
-            <span class="arrow">→</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Service 02 -->
-      <div class="service-row reverse">
-        <div class="service-image">
-          <img src="images/services/repairs.svg" alt="Electrical Repair and Maintenance">
-        </div>
-        <div class="service-text">
-          <div class="service-number">02</div>
-          <h3>Repairs</h3>
-          <p>Fast and reliable electrical repair services for homes and businesses. Our technicians diagnose and fix issues quickly, with guaranteed workmanship and transparent pricing.</p>
-          <button class="service-btn">
-            Learn More
-            <span class="arrow">→</span>
-          </button>
+        <div class="tl-card">
+          <div class="tl-icon">
+            <img src="images/services/installation.svg" alt="">
+          </div>
+          <div class="tl-body">
+            <span class="tl-number">01</span>
+            <h3>Installation</h3>
+            <p>Professional electrical installation for residential, commercial, and industrial projects with full compliance to safety standards.</p>
+          </div>
         </div>
       </div>
-
-      <!-- Service 03 -->
-      <div class="service-row">
-        <div class="service-image">
-          <img src="images/services/smart-home.svg" alt="Smart Home Automation">
+      <div class="tl-item">
+        <div class="tl-marker">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
         </div>
-        <div class="service-text">
-          <div class="service-number">03</div>
-          <h3>Smart Home</h3>
-          <p>Cutting-edge smart home automation solutions. Control your lighting, security, climate, and energy management from anywhere using your smartphone or voice commands.</p>
-          <button class="service-btn">
-            Learn More
-            <span class="arrow">→</span>
-          </button>
+        <div class="tl-card">
+          <div class="tl-icon">
+            <img src="images/services/repairs.svg" alt="">
+          </div>
+          <div class="tl-body">
+            <span class="tl-number">02</span>
+            <h3>Repairs</h3>
+            <p>Fast and reliable electrical repair services for homes and businesses. Our technicians diagnose and fix issues quickly with guaranteed workmanship.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-marker">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-icon">
+            <img src="images/services/smart-home.svg" alt="">
+          </div>
+          <div class="tl-body">
+            <span class="tl-number">03</span>
+            <h3>Smart Home</h3>
+            <p>Cutting-edge smart home automation solutions. Control your lighting, security, climate, and energy management from anywhere.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -154,14 +173,21 @@
   </section>
 
   <!-- ============================================
-       CONTACT CTA (simple button — le-lab style)
+       CONTACT SECTION
   ============================================ -->
-  <section id="contact" class="contact-cta-section">
-    <div class="magnetic-wrap">
-      <a href="mailto:info@hormuodelectrical.com" class="contact-cta-btn">
-        Contact Us
-        <span class="arrow">→</span>
-      </a>
+  <section id="contact" class="contact-section">
+    <div class="contact-inner">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <div class="contact-items">
+        <a href="mailto:hormuudelectricalengineering@gmail.com" class="contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>hormuudelectricalengineering@gmail.com</span>
+        </a>
+        <a href="tel:+252615000000" class="contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+252 61 500 0000</span>
+        </a>
+      </div>
     </div>
   </section>
   </main>

@@ -81,50 +81,65 @@
   heroTl.from('.hero-content h1', { y: 60, opacity: 0, duration: 1, ease: 'power3.out' }, 0);
   heroTl.from('.hero-content .hero-subtitle', { y: 40, opacity: 0, duration: 0.8, ease: 'power3.out' }, 0.2);
 
-  // --- Service rows stagger reveal ---
-  gsap.utils.toArray('.service-row').forEach(function(row, i) {
+  // --- Timeline items stagger reveal ---
+  gsap.utils.toArray('.tl-item').forEach(function(item, i) {
     var tl = gsap.timeline({
       scrollTrigger: {
-        trigger: row,
+        trigger: item,
         start: 'top 80%',
         toggleActions: 'play none none reverse',
       }
     });
 
-    tl.from(row.querySelector('.service-image'), {
-      x: row.classList.contains('reverse') ? 60 : -60,
+    tl.from(item.querySelector('.tl-dot'), {
+      scale: 0,
       opacity: 0,
-      duration: 0.8,
-      ease: 'power3.out'
+      duration: 0.4,
+      ease: 'back.out(2)'
     }, 0);
 
-    tl.from(row.querySelector('.service-number'), {
-      y: 40,
+    tl.from(item.querySelector('.tl-card'), {
+      x: 40,
       opacity: 0,
-      duration: 0.6,
+      duration: 0.7,
       ease: 'power3.out'
     }, 0.1);
 
-    tl.from(row.querySelector('h3'), {
-      y: 30,
+    tl.from(item.querySelector('.tl-number'), {
+      y: 10,
       opacity: 0,
-      duration: 0.6,
+      duration: 0.3,
       ease: 'power3.out'
-    }, 0.2);
+    }, 0.3);
 
-    tl.from(row.querySelector('p'), {
+    tl.from(item.querySelector('h3'), {
       y: 20,
       opacity: 0,
       duration: 0.5,
       ease: 'power3.out'
-    }, 0.3);
+    }, 0.35);
 
-    tl.from(row.querySelector('.service-btn'), {
-      y: 20,
+    tl.from(item.querySelector('.tl-body p'), {
+      y: 15,
       opacity: 0,
       duration: 0.4,
       ease: 'power3.out'
-    }, 0.4);
+    }, 0.45);
+  });
+
+  // --- Mission & Vision reveal ---
+  gsap.utils.toArray('.mv-card').forEach(function(card) {
+    gsap.from(card, {
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: card,
+        start: 'top 85%',
+        toggleActions: 'play none none reverse',
+      }
+    });
   });
 
   // --- Video section reveal ---
