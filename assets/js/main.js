@@ -81,50 +81,20 @@
   heroTl.from('.hero-content h1', { y: 60, opacity: 0, duration: 1, ease: 'power3.out' }, 0);
   heroTl.from('.hero-content .hero-subtitle', { y: 40, opacity: 0, duration: 0.8, ease: 'power3.out' }, 0.2);
 
-  // --- Timeline items stagger reveal ---
-  gsap.utils.toArray('.tl-item').forEach(function(item, i) {
-    var tl = gsap.timeline({
+  // --- Service items stagger reveal ---
+  gsap.utils.toArray('.service-item').forEach(function(item, i) {
+    gsap.from(item, {
+      y: 30,
+      opacity: 0,
+      duration: 0.5,
+      delay: i * 0.1,
+      ease: 'power3.out',
       scrollTrigger: {
         trigger: item,
-        start: 'top 80%',
+        start: 'top 85%',
         toggleActions: 'play none none reverse',
       }
     });
-
-    tl.from(item.querySelector('.tl-dot'), {
-      scale: 0,
-      opacity: 0,
-      duration: 0.4,
-      ease: 'back.out(2)'
-    }, 0);
-
-    tl.from(item.querySelector('.tl-card'), {
-      x: 40,
-      opacity: 0,
-      duration: 0.7,
-      ease: 'power3.out'
-    }, 0.1);
-
-    tl.from(item.querySelector('.tl-number'), {
-      y: 10,
-      opacity: 0,
-      duration: 0.3,
-      ease: 'power3.out'
-    }, 0.3);
-
-    tl.from(item.querySelector('h3'), {
-      y: 20,
-      opacity: 0,
-      duration: 0.5,
-      ease: 'power3.out'
-    }, 0.35);
-
-    tl.from(item.querySelector('.tl-body p'), {
-      y: 15,
-      opacity: 0,
-      duration: 0.4,
-      ease: 'power3.out'
-    }, 0.45);
   });
 
   // --- Mission & Vision reveal ---
